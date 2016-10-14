@@ -1,0 +1,667 @@
+.gamebg{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 568px;
+    height: 320px;
+    background-image: url("gamebg.jpg");
+}
+
+#tablecards{
+    position: absolute;
+    width: 300px;
+    height: 56px;
+    top: 158px;
+    left: 138px;
+}
+
+#firstcard{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    opacity: 0;
+}
+.firstcardshow{
+    -webkit-animation: firstcardanim .5s linear;
+    animation-fill-mode: forwards;
+}
+.showcardnext{
+    -webkit-animation: therestcardanim .5s 1s linear;
+    animation-fill-mode: forwards;
+}
+#secondcard{
+    position: absolute;
+    top: 2px;
+    left: 58px;
+    opacity: 0;
+}
+#thirdcard{
+    position: absolute;
+    top: 2px;
+    left: 119px;
+    opacity: 0;
+}
+#fourthcard{
+    position: absolute;
+    top: 2px;
+    left: 173px;
+    opacity: 0;
+}
+#fifthcard{
+    position: absolute;
+    top: 2px;
+    left: 223px;
+    opacity: 0;
+}
+
+#pot{
+    font-family: UtahReg;
+    top: 132px;
+    left: 288px;
+    position: absolute;
+    width: 32px;
+    height: 13px;
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+}
+#pot-chips{
+    position: absolute;
+    top: 134px;
+    left: 167px;
+    opacity: 0;
+}
+.potchipsfadeinanim{
+    -webkit-animation: potchipsfadein 1s linear;
+    animation-fill-mode: forwards;
+}
+
+
+
+.potchips-bigwin{
+    -webkit-animation: potwinanim 1s linear;
+    animation-fill-mode: forwards;
+}
+
+#player2overlay{
+    top: 7px;
+    left: 376px;
+}
+#player1overlay{
+    top: 7px;
+    left: 133px;
+}
+.playerout {
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 61px;
+    height: 61px;
+    border-radius: 30px;
+    position: absolute;
+}
+#player1bet{
+    font-family: UtahReg;
+    top: 90px;
+    left: 134px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    width: 56px;
+    height: 17px;
+    background: -webkit-linear-gradient(top, rgba(43,163,95,1) 4%,rgba(0,133,70,1) 5%,rgba(0,103,55,1) 96%,rgba(43,163,95,1) 98%);
+    border-radius: 15px;
+    line-height: 19px;
+}
+
+#player1status{
+    font-family: UtahReg;
+    top: 72px;
+    left: 110px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    width: 100px;
+}
+
+#player1bank{
+    font-family: UtahReg;
+    position: absolute;
+    top: 50px;
+    left: 144px;
+    color: white;
+    font-size: 11px;
+    height: 10px;
+    width: 40px;
+    line-height: 15px;
+    text-align: center;
+}
+#player2bet{
+    font-family: UtahReg;
+    top: 90px;
+    left: 375px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    width: 56px;
+    height: 17px;
+    background: -webkit-linear-gradient(top, rgba(43,163,95,1) 4%,rgba(0,133,70,1) 5%,rgba(0,103,55,1) 96%,rgba(43,163,95,1) 98%);
+    border-radius: 15px;
+    line-height: 19px;
+}
+#player2status{
+    font-family: UtahReg;
+    top: 72px;
+    left: 353px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    width: 100px;
+}
+#player2bank{
+    font-family: UtahReg;
+    position: absolute;
+    top: 50px;
+    left: 386px;
+    font-size: 11px;
+    height: 10px;
+    width: 40px;
+    line-height: 16px;
+    text-align: center;
+    color: white;
+}
+#playerHighlight-top{
+    top: -18px;
+    visibility: hidden;
+}
+#playerHighlight-bottom{
+    top: 245px;
+    visibility: hidden;
+}
+.shineon{
+    position: absolute;
+    width: 74px;
+    height: 270px;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0.47) 50%, rgba(255,255,255,1) 100%);
+    left: 475px;
+    -webkit-filter: blur(3px);
+    opacity: .4;
+}
+.playerhighlight{
+    position: absolute;
+    width: 188px;
+    height: 95px;
+    background: #b3ff96;
+    left: 194px;
+    -webkit-filter: blur(5px);
+    border-radius: 85px;
+    opacity: .4;
+}
+#playerstatus{
+    position: absolute;
+    font-family: UtahReg;
+    top: 277px;
+    left: 219px;
+    width: 148px;
+    height: 14px;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    letter-spacing: 1px;
+}
+#meter{
+    position: absolute;
+    top: 293px;
+    left: 243px;
+}
+#meter-color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 51px;
+}
+#meter-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#player3avatar{
+    top: 222px;
+    left: 126px;
+    position: absolute;
+}
+#player3bank{
+    top: 278px;
+    font-family: UtahReg;
+    left: 145px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    line-height: 18px;
+    width: 46px;
+    text-align: center;
+}
+#player3bet{
+    visibility: hidden;
+    font-family: UtahReg;
+    top: 0px;
+    left: 258px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    width: 56px;
+    height: 17px;
+    background: -webkit-linear-gradient(top, rgba(36,178,226,1) 3%,rgba(43,163,95,1) 3%,rgba(3,115,174,1) 5%,rgba(2,73,111,1) 96%,rgba(36,178,226,1) 98%);
+    border-radius: 15px;
+    line-height: 19px;
+}
+#fallingchips{
+    opacity: 0;
+    position: absolute;
+    top: 230px;
+    left: 509px;
+}
+#fallingchips2{
+    opacity: 0;
+    position: absolute;
+    top: 230px;
+    left: 461px;
+}
+#fallingchips3{
+    opacity: 0;
+    position: absolute;
+    top: 270px;
+    left: 496px;
+}
+
+.fallingchipsanim{
+    -webkit-animation: chipsfallinganim .2s linear infinite;
+    animation-fill-mode: forwards;
+}
+.reversefallingchipsanim{
+    -webkit-animation: reversechipsfallinganim .2s linear infinite;
+    animation-fill-mode: forwards;
+}
+.fallingchipsanim2{
+    -webkit-animation: chipsfallinganim .2s linear .3s infinite;
+    animation-fill-mode: forwards;
+}
+.reversefallingchipsanim2{
+    -webkit-animation: reversechipsfallinganim .2s linear .3s infinite;
+    animation-fill-mode: forwards;
+}
+.fallingchipsanim3{
+    -webkit-animation: chipsfallinganim .2s linear .5s infinite;
+    animation-fill-mode: forwards;
+}
+.reversefallingchipsanim3{
+    -webkit-animation: reversechipsfallinganim .2s linear .5s infinite;
+    animation-fill-mode: forwards;
+}
+#chipsanimcover3{
+    position: absolute;
+    top: 255px;
+    left: 496px;
+}
+#chipsstack3{
+    position: absolute;
+    top: 270px;
+    left: 496px;
+}
+#chipsanimcover1{
+    position: absolute;
+    top: 284px;
+    left: 510px;
+}
+#chipsstack1{
+    position: absolute;
+    top: 272px;
+    left: 510px;
+}
+#chipsanimcover2{
+    position: absolute;
+    top: 283px;
+    left: 461px;
+}
+#chipsstack2{
+    position: absolute;
+    top: 272px;
+    left: 461px;
+}
+#chipstobetanimation{
+    position: absolute;
+    top: 236px;
+    left: 480px;
+    opacity: 0;
+}
+#player3chipstobet-endvalue {
+    background: -webkit-linear-gradient(top, rgba(43,163,95,1) 4%,rgb(8, 222, 119) 5%,rgb(0, 201, 107) 96%,rgba(43,163,95,1) 98%);
+    font-family: UtahReg;
+    top: 224px;
+    left: 423px;
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    width: 66px;
+    height: 22px;
+    border-radius: 15px;
+    line-height: 25px;
+    color: #01703c;
+    border: 1px solid #006f3b;
+    opacity: 0;
+}
+
+#playerstatus-endvalue{
+    position: absolute;
+    font-family: UtahReg;
+    top: 199px;
+    left: 425px;
+    width: 67px;
+    height: 24px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
+.playerstatus-anim {
+    -webkit-animation: playerstatusAnimAfterBet 1s linear;
+    animation-fill-mode: forwards;
+}
+.playerbet-anim{
+    -webkit-animation: playerchipstobetAnimAfterBet 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.chipsmovetocenter{
+    -webkit-animation: chipsmoveforbetanim .5s linear;
+    animation-fill-mode: forwards;
+}
+.chipsmovetopot{
+    -webkit-animation: chipsmovetopotanim .5s linear;
+    animation-fill-mode: forwards;
+}
+#checkcircle{
+    top: 245px;
+    left: 362px;
+    position: absolute;
+}
+#checkouterring{
+    -webkit-box-shadow: 0px 0px 0px 3px #FFFFFF;
+    width: 85px;
+    height: 43px;
+    position: absolute;
+    border-radius: 100px / 50px;
+    top: 5px;
+    left: 8px;
+    -webkit-filter: blur(1px);
+}
+.check-selected2{
+    -webkit-animation: checkanim2 1s, checkanim3 1s .5s;
+    animation-fill-mode: forwards;
+}
+.check-selected{
+    -webkit-animation: checkanim 1s;
+    animation-fill-mode: forwards;
+}
+#betcircle{
+    top: 245px;
+    left: 457px;
+    position: absolute;
+}
+#tutorial{
+    position: absolute;
+    -webkit-animation: tutstartanim 1.5s;
+    animation-fill-mode: forwards;
+}
+#tutfade{
+    position: absolute;
+    width: 568px;
+    height: 320px;
+    background: rgba(0, 0, 0, 0.56);
+}
+
+#tutchar{
+    position: absolute;
+    top: 62px;
+    left: 30px;
+}
+#speechbubble {
+    position: absolute;
+    top: 158px;
+    left: 84px;
+    -webkit-transform: scale(1.85,1.85);   
+}
+#tuttext{
+    position: absolute;
+    font-family: UtahReg;
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    top: 13px;
+    width: 135px;
+    left: 8px;
+}
+#tuthand{
+    position: absolute;
+}
+.tuthandanim1 {
+    left: 439px;
+    top: 114px;
+    -webkit-animation: handanim1 1s ease-in-out infinite alternate;
+}
+.tuthandanim2 {
+    left: 341px;
+    top: 189px;
+    -webkit-animation: handanim2 2s infinite;
+}
+#tut-arrow-up {
+    position: absolute;
+}
+.tutarrowdefaultup {
+    top: 88px;
+    left: 480px;
+}
+.tutarrowanimup1 {
+    top: 88px;
+    left: 480px;
+    -webkit-animation: uparrowstartanim1 .5s infinite alternate;
+}
+.tutarrowanimup2 {
+    top: 130px;
+    left: 388px;
+    -webkit-animation: uparrowstartanim2 .5s infinite alternate;
+}
+#tut-arrow-down{
+    top: 188px;
+    left: 480px;
+    position: absolute;
+    -webkit-transform:rotate(180deg);
+}
+.tutarrowdownanimation1{
+    -webkit-animation: downarrowstartanim .5s infinite alternate;
+}
+#player3chipstobet{
+    font-family: UtahReg;
+    top: 200px;
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    width: 76px;
+    border-radius: 15px;
+    line-height: 28px;
+}
+
+.player3chipstobet {
+    background: -webkit-linear-gradient(top, rgba(43,163,95,1) 4%,rgba(0,133,70,1) 5%,rgba(0,103,55,1) 96%,rgba(43,163,95,1) 98%);
+    text-shadow: 1px 1px 2px #000000;
+    color: white;
+    left: 476px;
+}
+.player3chipstobet-max{
+    background:-webkit-linear-gradient(top, rgba(253,243,132,1) 0%, rgba(253,243,132,1) 2%, rgba(255,230,37,1) 6%, rgba(255,217,0,1) 96%, rgba(253,243,132,1) 98%, rgba(253,243,132,1) 100%);
+    color: #774a00;
+    left: 476px;
+}
+.player3chipstobet-moveleft{
+    -webkit-animation: chipsmoveleftanim .2s linear;
+    animation-fill-mode: forwards;
+}
+.player3chipstobet-readyforbet{
+   opacity: 0;
+}
+#playercards{
+    left: 277px;
+    top: 220px;
+    position: absolute;
+    width: 87px;
+    height: 87px;
+}
+#playerQcard{
+    position: absolute;
+    left: -34px;
+    -webkit-transform: rotate(-5.31deg);
+}
+#player10card{
+    position: absolute;
+    -webkit-transform: rotate(5.31deg);
+    left: -3px;
+}
+#playercards-shadow{
+    position: absolute;
+    left: 198px;
+    top: 220px;
+}
+.bgcover{
+    background-image: url("bottomgamebg.jpg");
+    position: absolute;
+    width: 568px;
+    height: 50px;
+    top: 270px;
+    overflow: hidden;
+}
+#increase-decrease-bet{
+    position: absolute;
+    width: 99px;
+    height: 200px;
+    left: 458px;
+    top: 100px;
+}
+
+/*animations:*/
+/*big win animations*/
+@keyframes potwinanim {
+    0%   {-webkit-transform: translate(0px,0px);opacity: 1;}
+    90%   {-webkit-transform: translate(-120px, 106px);opacity: 1;}
+    100% {-webkit-transform: translate(-120px, 106px);opacity: 0;}
+}
+/*tutorial elements*/
+@keyframes tutstartanim {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes uparrowstartanim1 {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes uparrowstartanim2 {
+    0%   {-webkit-transform: rotate(-50deg); opacity: 0;}
+    100% {-webkit-transform: rotate(-50deg); opacity: 1;}
+}
+@keyframes downarrowstartanim {
+    0%   {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes handanim1 {
+    0%   {-webkit-transform: translate(0px, 0px) rotate(65deg);}
+    100%   {-webkit-transform: translate(0px,100px) rotate(65deg);}
+}
+@keyframes handanim2 {
+    0% {-webkit-transform: translate(42px, 42px) rotate(65deg);}
+    100% {-webkit-transform: translate(0px,0px) rotate(65deg);}
+}
+/*game elements*/
+/*Table card animations:*/
+@keyframes firstcardanim {
+    0%   {-webkit-transform: translate(50px,-66px); opacity: 0;}
+    60%   {opacity: 1;}
+    100%   {-webkit-transform: translate(0px,0px); opacity: 1;}
+}
+@keyframes therestcardanim {
+    0%   {-webkit-transform: translate(-62px,0px); opacity: 0;}
+    100%   {-webkit-transform: translate(0px,0px); opacity: 1;}
+}
+/*the bet statuses animation that happens after a bet is made:*/
+@keyframes playerchipstobetAnimAfterBet {
+    0%   {-webkit-transform: translate(0px,-50px) scale(.3,.3); opacity: 0;}
+    100% {-webkit-transform: translate(0px,0px) scale(1,1); opacity: 1;}
+}
+@keyframes playerstatusAnimAfterBet {
+    0%   {-webkit-transform: scale(0,0); opacity: 0;}
+    40%   {-webkit-transform: scale(0,0); opacity: 1;}
+    80%   {-webkit-transform: scale(1.2,1.2); opacity: 1;}
+    100% {-webkit-transform: scale(1,1); opacity: 1;}
+}
+/*The beutiful magic chips that fall from the user's finger:*/
+@keyframes chipsfallinganim {
+    0%   {-webkit-transform: translate(0px, 0px); opacity: 1;}
+    100% {-webkit-transform: translate(0px,42px);  opacity: 1;}
+}
+@keyframes reversechipsfallinganim {
+    0%   {-webkit-transform: translate(0px,42px); opacity: 1;}
+    100% {-webkit-transform: translate(0px, 0px);  opacity: 1;}
+}
+/*When the user moves the slider up and down, the flag with the amount the user is betting moves over and comes back on release:*/
+@keyframes chipsmoveleftanim {
+    0%   {-webkit-transform: translate(0px, 0px);}
+    100% {-webkit-transform: translate(-100px, 0px);}
+}
+/*When the user places a bet, the chips move to the center:*/
+@keyframes chipsmoveforbetanim {
+    0%   {-webkit-transform: translate(0px, 0px); opacity: 0;}
+    5% {-webkit-transform: translate(0px, 0px); opacity: 0;}
+    100% {-webkit-transform: translate(-120px, -20px)scale(.8,.8); opacity: 1;}
+}
+/*When the round is over, the chips move to the pot pile:*/
+@keyframes chipsmovetopotanim {
+    0%   {-webkit-transform: translate(-120px, -20px);opacity: 1;}
+    90% {-webkit-transform: translate(-308px, -119px)scale(.3,.3);opacity: 1;}
+    100% {-webkit-transform: translate(-308px, -119px)scale(.3,.3);opacity: 0;}
+}
+/*When the user selects the check button, circles use a combo of these animations:*/
+@keyframes checkanim {
+    0%   {-webkit-transform: scale(1, 1); opacity: 1;}
+    50%  {-webkit-transform: scale(.7, .7); opacity: 1;}
+    100% {-webkit-transform: scale(1.3, 1.3);opacity: 0;}
+}
+@keyframes checkanim2 {
+    0%   {-webkit-transform: scale(1, 1); opacity: 1;}
+    10%   {-webkit-transform: scale(1, 1); opacity: 1;}
+    100% {-webkit-transform: scale(1.5, 1.5);opacity: 0;}
+}
+@keyframes checkanim3 {
+    0%   {-webkit-transform: scale(1, 1); opacity: 1;}
+    50%   {-webkit-transform: scale(1, 1); opacity: 1;}
+    100% {-webkit-transform: scale(1.5, 1.5);opacity: 0;}
+}
+/*When the chips move to the pot pile, the pot pile fades in:*/
+@keyframes potchipsfadein {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*fonts:*/
+@font-face {
+  font-family: UtahReg;
+  src: url(UtCdWG__.ttf);
+}

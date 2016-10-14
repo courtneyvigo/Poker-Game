@@ -1,0 +1,128 @@
+/********** OUTRO SPECIFIC CSS **********/
+#main-container {
+	width: 568px;
+	height: 320px;
+	position: absolute;
+}
+.container {
+	width: 568px;
+	height: 320px;
+	position: absolute;
+}
+#outro-container {
+	background-image: url('BG_iPhoneLand.jpg');
+	background-size: 568px 320px;
+	display: none;
+}
+#animation-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+#logo {
+	position: absolute;
+	width: 182px;
+	height: 70px;
+	top: 22px;
+	left: 193px;
+}
+#appicon {
+	background-image: url('AppLogo_iPhoneLand.jpg');
+	/*http://www.cssmatic.com/box-shadow... this is a generator that does box-shadow and outer-glow. For all app icons, insert a
+	resized square jpeg and insert the border-radius.*/
+	border-radius:18px;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 36px;
+	top: 204px;
+}
+#mnectarbranding {
+	background-image: url('mNectarBrand_568x29.png');
+	width: 568px;
+	height: 29px;
+	top: 290px;
+	position: absolute;
+}
+/*function that defines the animation to be called later. It also defines the parameters and animation deforms. 
+http://www.w3schools.com/css/css3_animations.asp*/
+@-webkit-keyframes pulse {
+	from {-webkit-transform: scale(1);}
+	to {-webkit-transform: scale(.8);}
+}
+#bottom-button {
+	position: absolute;
+}
+#top-button {
+	width: 240px;
+	height: 80px;
+	border-radius:15px;
+	position: absolute;
+	left: 164px;
+	/*animation is called. This is in a very specific order. 1. animation name 2. duration 3. animation easing 4. delay 5. pattern*/
+	animation: pulse 1.5s ease-in-out 1s infinite alternate;
+}
+.mng-install-click-url {
+	position: absolute;
+	width: 568px;
+	height: 234px;
+	top: 86px;
+	left: 0px;
+}
+.mng-idle-click-url {
+	position: absolute;
+	width: 240px;
+	height: 80px;
+	left: 164px;
+	top: 113px;
+}
+.mng-error-click-url {
+	position: absolute;
+	width: 180px;
+	height: 60px;
+	top: 204px;
+	left: 194px;
+}
+.mng-install-idle {
+	background-image: url('CTA_iPhoneLand.jpg');
+	background-size: 240px 80px;
+	top: 113px;
+}
+.mng-install-dl {
+	background-image: url('CTA_iPhoneLand.jpg');
+	background-size: 240px 80px;
+	top: 202px;
+}
+/*The thanks will be removed for a midcore game:*/
+.mng-install-thanks {
+	width: 200px;
+	height: 60px;
+	background-image: url('Thanks_iPhoneLand.png');
+	background-size: 200px 60px;
+	left: 184px;
+	top: 113px;
+}
+.mng-idle-retry {
+	width: 180px;
+	height: 78px;
+	border-radius:13px;
+	background-image: url('IdleRetry_iPhoneLand.jpg');
+	background-size: 180px 78px;
+	left: 194px;
+	top: 204px;
+}
+.mng-error-dl {
+	width: 180px;
+	height: 60px;
+	border-radius:13px;
+	background-image: url('ErrorDL_iPhoneLand.jpg');
+	background-size: 180px 60px;
+	left: 194px;
+	top: 204px;
+}
+.mng-error-retry {
+	background-image: url('ErrorRetry_iPhoneLand.jpg');
+	background-size: 240px 80px;
+	top: 113px;
+}
+/********** OUTRO SPECIFIC CSS **********/

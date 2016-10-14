@@ -1,0 +1,48 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:c2cecbe7a1e6be0b80dc8bf5ab0dac9f:18cbd9fcb84ea67e9043426d565079aa:8a482c3aa6e9f22bb4746d4560978104$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(pokerassets.png);}
+
+.Thanks_iPhoneLand {width:296px; height:22px; background-position: -466px -133px}
+.ace_player2 {width:29px; height:42px; background-position: -665px -55px}
+.betcircle {width:122px; height:53px; background-position: -341px -200px}
+.cardback {width:31px; height:43px; background-position: -632px -55px}
+.checkcircle {width:99px; height:61px; background-position: -365px -133px}
+.chipsIndividual_iPhone {width:46px; height:22px; background-position: -466px -157px}
+.chipsStackCover1_iPhone {width:44px; height:36px; background-position: -295px -216px}
+.chipsStackCover2_iPhone {width:44px; height:37px; background-position: -249px -216px}
+.chipsStackCover3_iPhone {width:44px; height:65px; background-position: -319px -133px}
+.chipsStack_iPhone {width:44px; height:98px; background-position: -132px -1px}
+.chipsStackanimation_iPhone {width:63px; height:52px; background-position: -702px -1px}
+.dotanimation_iPhone {width:129px; height:129px; background-position: -1px -1px}
+.four_player2 {width:29px; height:42px; background-position: -654px -157px}
+.logo_iPhone {width:86px; height:88px; background-position: -148px -133px}
+.mNectarBrand_568x29 {width:568px; height:29px; background-position: -132px -101px}
+.meterBott {width:99px; height:10px; background-position: -1px -244px}
+.meterMid {width:99px; height:10px; background-position: -102px -239px}
+.meterTop {width:99px; height:10px; background-position: -148px -223px}
+.player10card {width:70px; height:96px; background-position: -279px -1px}
+.playerAvatar {width:81px; height:81px; background-position: -236px -133px}
+.playerQcard {width:70px; height:96px; background-position: -351px -1px}
+.playercardshadow {width:207px; height:95px; background-position: -423px -1px}
+.potpile_iPhone {width:70px; height:23px; background-position: -696px -55px}
+.speechbubble {width:148px; height:44px; background-position: -536px -210px}
+.tablecard1 {width:69px; height:51px; background-position: -465px -196px}
+.tablecard2 {width:61px; height:51px; background-position: -702px -80px}
+.tablecard3 {width:55px; height:51px; background-position: -597px -157px}
+.tablecard4 {width:59px; height:51px; background-position: -536px -157px}
+.tablecard5 {width:67px; height:51px; background-position: -632px -1px}
+.three_player2 {width:29px; height:42px; background-position: -685px -157px}
+.tutarrow {width:62px; height:110px; background-position: -1px -132px}
+.tutcharacter {width:81px; height:105px; background-position: -65px -132px}
+.tuthand {width:99px; height:96px; background-position: -178px -1px}
+.two_player2 {width:29px; height:42px; background-position: -686px -201px}

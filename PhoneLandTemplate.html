@@ -1,0 +1,150 @@
+
+
+<!--Main Container that holds everything in an absolute position to hold everything in place in the UI-->
+<!--All html coding for your project should be done inside this "main-container"-->
+<!--Feel free to add to, delete or edit any or all of the html that is currently inside this container-->
+<!--Just be sure to keep the css that defines the styling for the "main-container"-->
+<div id="main-container">
+
+		<!--backgroundImage: all other gameplay elements are children of this div.-->
+		<div id="game-container" class="container">
+			<div class="gamebg"></div>
+				<div id="playerHighlight-bottom" class="playerhighlight"></div>
+			<div id="tablecards">
+				<div id="firstcard" class="sprite tablecard1"></div>
+				<div id="secondcard" class="sprite tablecard2"></div>
+				<div id="thirdcard" class="sprite tablecard3"></div>
+				<div id="fourthcard" class="sprite tablecard4"></div>
+				<div id="fifthcard" class="sprite tablecard5"></div>
+			</div>
+
+
+
+			<div id="pot">$500</div>
+			<div id="pot-chips" class="sprite potpile_iPhone"></div>
+
+			<div id="player1">
+				<div id="player1bet">$100</div>
+				<div id="player1status">Small Blind</div>
+				<div id="player1bank">10200</div>
+				<div id="player1overlay"></div>
+			</div>
+			<div id="player2">
+				<div id="player2bet">$200</div>
+				<div id="player2status">Big Blind</div>
+				<div id="player2bank">10800</div>
+				<div id="player2overlay"></div>
+			</div>
+
+			<div id="playercards">
+				<div id="playerQcard" class="sprite playerQcard"></div>
+				<div id="player10card" class="sprite player10card"></div>
+			</div>
+
+			<div class="bgcover">
+				<div id="playerHighlight-top" class="playerhighlight"></div>
+			</div>
+			<div id="playercards-shadow" class="sprite playercardshadow"></div>
+			
+
+			<div id="checkcircle" class="sprite checkcircle">
+				<div id="checkouterring"></div>
+			</div>
+			<div id="betcircle" class="sprite betcircle"></div>
+
+			<div id="player3">
+				<div id="player3avatar" class="sprite playerAvatar"></div>
+				<div id="player3bank">$9,800</div>
+				
+				<!-- this one will be effected with the slide toggle -->
+				<div id="chipsfallinganim">
+
+					<div id="chipsstack3" class="sprite chipsStack_iPhone"></div>
+					<div id="chipsanimcover3" class="sprite chipsStackCover3_iPhone"></div>
+					
+					<div id="heavens-glow" class="shineon"></div>
+					
+					<div id="chipsstack1" class="sprite chipsStack_iPhone"></div>
+					<div id="chipsanimcover1" class="sprite chipsStackCover1_iPhone"></div>
+					
+					<div id="chipsstack2" class="sprite chipsStack_iPhone"></div>
+					<div id="chipsanimcover2" class="sprite chipsStackCover2_iPhone"></div>
+					
+					<div id="fallingchips" class="sprite chipsIndividual_iPhone"></div>
+					<div id="fallingchips2" class="sprite chipsIndividual_iPhone"></div>
+					<div id="fallingchips3" class="sprite chipsIndividual_iPhone"></div>
+				</div>
+
+				<div id="endvalue-animation">
+					<div id="chipstobetanimation" class="sprite chipsStackanimation_iPhone"></div>
+					<div id="player3chipstobet-endvalue">3452</div>
+					<div id="playerstatus-endvalue">Call</div>
+				</div>
+
+				<div id="player3chipstobet" class="player3chipstobet">$200</div>
+			</div>
+
+			<div id="playerstatus">You have a High Card</div>
+			<div id="meter" class="sprite meterBott">
+				<div id="meter-color" class="sprite meterMid"></div>
+				<div id="meter-cover" class="sprite meterTop"></div>
+			</div>
+			<div id="tutorial">
+				<div id="tutfade"></div>
+				<div id="tutchar" class="sprite tutcharacter"></div>
+				<div id="speechbubble" class="sprite speechbubble">
+					<div id="tuttext">Slide your finger up and down to raise. The minimum bet is a Call.</div>
+				</div>
+				<div id="tuthand" class="sprite tuthand tuthandanim1"></div>
+				<div id="tut-arrow-up" class="sprite tutarrow tutarrowanimup1"></div>
+				<div id="tut-arrow-down" class="sprite tutarrow tutarrowdownanimation1"></div>
+			</div>
+			
+			<div id="increase-decrease-bet"></div>
+			
+		</div>
+
+		<!-- OUTRO SPECIFIC HTML -->
+		<!--backgroundImage: all other outro elements are children of this div.-->
+		<div id="outro-container" class="container">
+
+			<!--Put all background animation (all animation that exists behind the buttons but in front of the background... ex: snow, rain, or bubbles) inside this empty div-->
+			<div id="animation-container">
+				<div id="dots"></div>
+			</div>
+
+			<!--ThanksForPlaying: we will assign a class and Id to be able to change it between screens-->
+			<div id="bottom-button">
+			</div>
+
+			<!--DLbutton: margin: auto; allows the button to be centered automatically!-->
+			<div id="top-button">
+			</div>
+
+			<!--Logo: this is an empty div. Just add a background-image:url('');-->
+			<div id="logo">
+			</div>
+
+			<!--AppIcon-->
+			<div id="appicon">
+			</div>
+
+			<!--mNectar Branding-->
+			<div id="mnectarbranding">
+			</div>
+
+			<!--ClickURL that sends the user to the landing page-->
+			<div id="dl-div" onclick="clickDownload();">
+			</div>
+		</div>
+
+</div>
+
+<!--Feel free to add to, delete or edit these script and link tags-->
+<!-- Hammer.JS needs to be before the game.JS because it needs to load first -->
+<link rel="stylesheet" href="assets/OutroCSS.css">
+<link rel="stylesheet" href="assets/GameCSS.css">
+<link rel="stylesheet" href="assets/pokerassets.css">
+<script src="assets/hammer.min.js"></script>
+<script src="assets/GameJS.js"></script>
+<script src="assets/OutroJS.js"></script>
